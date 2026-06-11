@@ -1,0 +1,4 @@
+interface:
+  display_name: "DMM Post Generator"
+  short_description: "商品情報とセール情報から、検証用のX投稿案・ブログ紹介文・CSV記録行を作ります。"
+  default_prompt: "商品情報とセール情報から、検証用のX投稿案・ブログ紹介文・CSV記録行を作ってください。"

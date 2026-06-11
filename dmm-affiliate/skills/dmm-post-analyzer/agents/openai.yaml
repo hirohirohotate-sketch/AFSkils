@@ -1,0 +1,4 @@
+interface:
+  display_name: "DMM Post Analyzer"
+  short_description: "posts.csvを集計し、残す型・止める型・来週の投稿配分を判断します。"
+  default_prompt: "posts.csvを読んで、残す型・止める型・来週の投稿配分を判断してください。"
