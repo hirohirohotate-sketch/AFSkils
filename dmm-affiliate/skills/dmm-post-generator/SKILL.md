@@ -40,18 +40,47 @@ Return exactly these sections:
    - 1 short paragraph, 120-180 Japanese characters.
 4. `ハッシュタグ候補`
    - 5-8 tags.
+   - Also include 2-4 default hashtags at the end of every X draft, after the URL.
 5. `CSV記録用の行`
    - Use the `data/posts.csv` column order.
 
 ## Writing Rules
 
-- Keep each X draft around 70-120 Japanese characters before the URL.
-- Include one clear reason to click: price gap, deadline, genre fit, ranking angle, or comparison angle.
-- Do not claim sales rank, discount rate, stock, deadline, or performance if the input does not provide it.
-- Avoid explicit sexual wording. Keep copy focused on sale value, title/actor, genre, and browsing intent.
-- Avoid vague hype such as `神`, `最高`, `絶対`, `爆売れ` unless the user provides evidence.
+実績のある2つの投稿フォーマットを起点にする。
+
+**単品VRセール型（direct報酬）の基本ルール：**
+- `【VRセール情報】` で始める（固定）
+- 女優名は `さん` 付き、商品名は `『』` で括る
+- 8KVR版と通常版の2つの価格を `➔` で並べる（片方しかなければ1つでよい）
+- 一言メモは内容の具体的な特徴を感情込みで1文。「〜すぎます…！」のトーンでよい
+- 締めは「このチャンスをお見逃しなく！」で統一
+- ハッシュタグに女優名を必ず含める
+- ハッシュタグはURLの**前**に置く
+
+**100円/大型セール型（カテゴリ報酬）の基本ルール：**
+- `【激アツ】` で始める（固定）
+- 「神セール」「全品〇〇円」で規模感を出す。`神` は使ってよい
+- 対象本数と期限を必ず入れる
+- `#PR` を含める
+- `#エロ動画` など直接的なジャンルタグを入れる
+- ハッシュタグはURLの**前**に置く
+
+**共通ルール：**
 - Do not auto-post, schedule posts, or call external APIs. Output drafts only.
-- If the product is adult-oriented, keep the language platform-safe and do not intensify explicit details.
+- 性的な表現は直接的に書かない。内容の雰囲気や状況描写にとどめる。
+- 入力にない情報（ランキング、在庫数、実績）を捏造しない。
+- バリエーションは書き出しや価格の見せ方で変化をつける。同じ文体を繰り返さない。
+
+## 禁止パターン（以下の言い回しは使わない）
+
+- 「あとで見ようとして忘れるやつ」
+- 「先に貼る」
+- 「今日中に見とくとよさそう」
+- 「期限かなり近い」
+- 「失敗コスト低め」
+- 「〜で探している人向け」
+- 「確認候補」「投稿枠」「訴求」「比較用に置いておく」
+- バリアントラベル `[A1 / 単品VRセール型]` などを投稿本文に含める
 
 ## Template Selection
 
