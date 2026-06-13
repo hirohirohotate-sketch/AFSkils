@@ -1,0 +1,9 @@
+services:
+  affiliate-worker:
+    build: .
+    env_file:
+      - path: .env
+        required: false
+    volumes:
+      - ./data:/app/data
+    command: python -m app.main generate-candidates --source data/products.csv --limit 5

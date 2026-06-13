@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "dmm-affiliate"
+version = "0.1.0"
+description = "Local DMM/FANZA affiliate candidate generation tools."
+authors = ["Hiroki"]
+readme = "README.md"
+packages = [{ include = "app" }]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+requests = ">=2.32.0"
+python-dotenv = ">=1.0.1"
+supabase = ">=2.6.0"
+
+[tool.poetry.scripts]
+dmm-affiliate = "app.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
