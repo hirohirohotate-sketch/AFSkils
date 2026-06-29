@@ -1,0 +1,8 @@
+# Local secrets
+.env
+.env.*
+!.env.example
+
+dmm-affiliate/.env
+dmm-affiliate/.env.*
+!dmm-affiliate/.env.example
